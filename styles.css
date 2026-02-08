@@ -63,6 +63,7 @@ body {
   font-size: clamp(0.5px, 0.22vw, 1px);
   line-height: 1;
   max-width: 100%;
+  text-align: center;
 }
 
 .ascii-nav .ascii-art {
