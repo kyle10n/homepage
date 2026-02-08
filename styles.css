@@ -1,3 +1,8 @@
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 .ascii-link,
 .ascii-link:visited,
 .ascii-link:active {
@@ -41,6 +46,7 @@
 .ascii-nav {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
 }
@@ -48,6 +54,7 @@
 .ascii-art {
   margin: 0;
   white-space: pre;
+  text-align: left;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   line-height: 1.05;
 }
