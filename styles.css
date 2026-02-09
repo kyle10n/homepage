@@ -94,7 +94,7 @@ body {
   }
 
   .giant-picture {
-    font-size: clamp(0.45px, 0.18vw, 0.8px);
+    font-size: clamp(0.45px, 0.15vw, 0.8px);
     line-height: 0.96;
   }
 }
