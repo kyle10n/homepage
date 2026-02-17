@@ -60,7 +60,7 @@ body {
 }
 
 .giant-picture {
-  font-size: clamp(0.55px, 0.22vw, 1px);
+  font-size: clamp(0.2px, 0.2vw, 0.4px);
   line-height: 0.98;
   max-width: 100%;
   text-align: center;
