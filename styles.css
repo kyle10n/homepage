@@ -78,6 +78,26 @@ body {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
 
+.ascii-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.ascii-showcase .ascii-art {
+  overflow: auto;
+}
+
+.ascii-showcase .giant-picture {
+  margin: 0;
+}
+
+.ascii-side-picture {
+  font-size: clamp(7px, 0.7vw, 10px);
+  line-height: 1;
+}
+
 @media (max-width: 900px) {
   .site-header-frame {
     height: 220px;
@@ -85,6 +105,14 @@ body {
 
   .ascii-nav .ascii-art {
     font-size: 7px;
+  }
+
+  .ascii-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .ascii-side-picture {
+    font-size: clamp(7px, 2.4vw, 10px);
   }
 }
 
