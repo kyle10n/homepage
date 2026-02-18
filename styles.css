@@ -60,7 +60,7 @@ body {
 }
 
 .giant-picture {
-  font-size: clamp(0.7px, 0.24vw, 1px);
+  font-size: clamp(0.42px, 0.15vw, 0.63px);
   line-height: 1;
   max-width: 100%;
   text-align: center;
@@ -86,7 +86,8 @@ body {
 }
 
 .ascii-showcase .ascii-art {
-  overflow: auto;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .ascii-showcase .giant-picture {
@@ -112,7 +113,7 @@ body {
   }
 
   .giant-picture {
-    font-size: clamp(0.9px, 0.3vw, 1.2px);
+    font-size: clamp(0.4px, 0.15vw, 0.6px);
     line-height: 1;
   }
 
@@ -127,7 +128,7 @@ body {
   }
 
   .giant-picture {
-    font-size: clamp(1px, 0.35vw, 1.3px);
+    font-size: clamp(0.36px, 0.14vw, 0.55px);
     line-height: 1;
   }
 }
