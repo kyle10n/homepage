@@ -102,6 +102,21 @@ body {
   overflow: hidden;
 }
 
+.giant-picture-desktop { display: block; }
+.giant-picture-mobile {
+  display: none;
+  font-size: 1px;     /* avoid iOS sub-pixel collapse */
+  line-height: 1;
+  white-space: pre;
+  letter-spacing: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .giant-picture-desktop { display: none; }
+  .giant-picture-mobile { display: block; }
+}
+
 .ascii-side-picture {
   font-size: clamp(7px, 0.7vw, 10px);
   line-height: 1;
@@ -125,7 +140,7 @@ body {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 900px) {
   .site-header-frame {
     height: 250px;
   }
