@@ -87,11 +87,19 @@ body {
 
 .ascii-showcase .ascii-art {
   min-width: 0;
-  overflow: hidden;
 }
 
 .ascii-showcase .giant-picture {
   margin: 0;
+  display: block;
+  max-width: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  line-height: 1;
+  letter-spacing: 0;
+  /* Scales long ~1376-char lines to narrow mobile viewports without JS */
+  font-size: clamp(0.22px, calc((100vw - 40px) / 950), 0.62px);
+  overflow: hidden;
 }
 
 .ascii-side-picture {
@@ -112,11 +120,6 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .giant-picture {
-    font-size: clamp(0.4px, 0.15vw, 0.6px);
-    line-height: 1;
-  }
-
   .ascii-side-picture {
     font-size: clamp(7px, 2.4vw, 10px);
   }
@@ -125,10 +128,5 @@ body {
 @media (max-width: 430px) {
   .site-header-frame {
     height: 250px;
-  }
-
-  .giant-picture {
-    font-size: clamp(0.36px, 0.14vw, 0.55px);
-    line-height: 1;
   }
 }
